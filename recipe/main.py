@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from database import Base, engine
-from recipe.models.user import User
-from recipe.routers.auth import router as auth_router
-from recipe.routers.user import router as users_router
-from recipe.routers.recipe import router as recipe_router 
-from recipe.routers.category import router as category_router 
-from recipe.routers.favourite import router as favourite_router
+from models.user import User
+from routers.auth import router as auth_router
+from routers.user import router as users_router
+from routers.recipe import router as recipe_router 
+from routers.category import router as category_router 
+from routers.favourite import router as favourite_router
 
 
 app = FastAPI(
