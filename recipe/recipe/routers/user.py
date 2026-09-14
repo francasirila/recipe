@@ -3,11 +3,11 @@ from uuid import UUID
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 
-from database import get_db
-from dependencies.auth import get_current_user
-from models.user import User
-from schemas.user import UserResponse, UserUpdate
-from services.user_service import UserService
+from recipe.database import get_db
+from recipe.dependencies.auth import get_current_user
+from recipe.models.user import User
+from recipe.schemas.user import UserResponse, UserUpdate
+from recipe.services.user_service import UserService
 
 
 router = APIRouter(
