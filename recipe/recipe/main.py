@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from recipe.database import Base, engine
+from database import Base, engine
 from recipe.models.user import User
 from recipe.routers.auth import router as auth_router
 from recipe.routers.user import router as users_router
